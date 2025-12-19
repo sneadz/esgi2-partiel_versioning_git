@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculette WEB</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<main class="container">
+    <h1>Calculette</h1>
+
+    <form id="calc-form" class="calc" autocomplete="off">
+        <div class="inputs">
+        <label>
+            <input id="a" type="number" step="any" required />
+        </label>
+
+        <label>
+            <select id="op" required>
+                <option value="add">+</option>
+                <option value="sub">-</option>
+                <option value="mul">×</option>
+            </select>
+        </label>
+
+        <label>
+            <input id="b" type="number" step="any" required />
+        </label>
+        </div>
+
+        <button type="submit">Calculer</button>
+    </form>
+
+    <section class="result">
+        <output id="result" aria-live="polite">—</output>
+    </section>
+</main>
+
+<script src="./calculator.js" defer></script>
+</body>
+</html>
